@@ -1,0 +1,15 @@
+modules:
+  jira:adminPage:
+    - key: custom-ui-routing-hello-world-admin-page
+      resource: main
+      resolver:
+        function: resolver
+      title: custom-ui-routing
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/d3dddf7b-8eba-4d93-8fd3-2ffbf0cb3ab2
